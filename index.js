@@ -1,4 +1,5 @@
 "use strict";
+
 require('dotenv').config()
 const nodemailer = require("nodemailer");
 const { contentEmail } = require('./contentEmail')
@@ -20,7 +21,7 @@ async function main() {
     // send mail with defined transport object
     let info = await transporter.sendMail({
         from: '"Testing Email" <testingbarreiro@gmail.com>', // sender address
-        to: "barreiromartinj@gmail.com", // list of receivers
+        to: "maartin@hotmail.com", // list of receivers
         subject: "Test Email", // Subject line
         text: "Testing Email", // plain text body
         html: contentEmail, // html body
